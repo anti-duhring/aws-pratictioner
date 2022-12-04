@@ -101,3 +101,21 @@
     -> Ex: EC2 é o nome do serviço de storage no servidor
     -> Ex: Route53 é o nome do serviço de compra de domínio
     -> [https://aws.amazon.com/products/](Lista dos serviços)
+
+# Shared Responsability Model
+    -> Quase como um ato de parenting (ser mãe e pai)
+    -> [https://aws.amazon.com/compliance/shared-responsibility-model/](Shared responsability model da AWS)
+    -> Ao abrir a conta na AWS você aceita o Shared Responsability Model, acordando que a própria Cloud Provider não será a única responsável pela segurança, já que o consumidor também terá suas próprias responsabilidades
+        -> Pode variar conforme o serviço prestado
+            -> Ex: Um serviço como o Amazon Elastic Compute Cloud (Amazon EC2) é categorizado como Infrastructure as a Service (IaaS – Infraestrutura como serviço) e, dessa forma, exige que o cliente execute todas as tarefas necessárias de configuração e gerenciamento da segurança.
+    -> Divisão:
+        -> AWS: Responsável pela segurança da cloud
+            -> Segurança do software -> Compute, storage, database e networking
+            -> Segurança do harware e infraestrutura global -> Regions, avaliability zones e edge locations
+        -> Consumidor: Responsável pela segurança dentro da cloud
+            -> Segurança da customer data
+            -> Segurança da plataform, applications, identity e gerenciamento do acesso
+            -> Segurança do sistema operacional, network e configuração de firewall
+            -> Criptografia dos dados do cliente e autenticação dos dados
+            -> Criptografia do server-side, tanto de dados quanto de arquivos
+            -> Proteção do networking traffic
