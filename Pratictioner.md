@@ -119,3 +119,34 @@
             -> Criptografia dos dados do cliente e autenticação dos dados
             -> Criptografia do server-side, tanto de dados quanto de arquivos
             -> Proteção do networking traffic
+
+# CLI e CloudShell
+## CLI
+    -> Command Line Interface
+    -> Um terminal
+    -> Pode ser instalado localmente
+
+## CLoudshell
+    -> Também é uma CLI, mas na cloud
+
+## Conteúdo
+    -> É possível visualizar, implementar, configurar e etc os serviços da AWS via console, CLI e CloudShell
+    -> Os buckets da nuvem da AWS, bem como os seus serviços, podem ser accessados de 3 formas:
+        -> Via console: https://us-east-1.console.aws.amazon.com/
+        -> Via CLI
+        -> Via CloudShell: https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#
+
+# Regiões
+    -> Região: áreas que disponibilizam serviços, cada área pode disponibilizar alguns serviços e não outros.
+    -> Códigos: US, AP, EU, SA, CA, ME e AF
+        -> Se está nos EUA, começa com US
+            -> Ex: us-east-2
+            -> US é o código da região, east é a área e 2 significa que é a segunda região dessa área
+        -> Ásia-pacífico com AP
+        -> Europa com EU
+        -> América do SUl começa com SA
+            -> EX: sa-east-1
+        -> Canadá com CA
+        -> Oriente Médio com ME
+        -> África AF
+    
