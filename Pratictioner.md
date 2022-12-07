@@ -150,3 +150,36 @@
         -> Oriente Médio com ME
         -> África AF
     
+# Zonas de disponibilidade (AZ)
+    -> São os conteúdos dentro das regiões
+    -> Ex: Quantos datacenters existem na região us-east-2? 
+        -> us-east-2a
+        -> us-east-2b
+        -> us-east-2c
+    -> AZ (Avaliability Zones ou Zonas de Disponibilidade) são o aglomerado (ou único) datacenters disponíveis em uma região da AWS
+    -> Possuem links de conexão entre todas as AZ dentro da região pra diminuir a latência
+        -> São fisicamente separadas por vários até 100km entre si
+        -> Alta largura de banda
+    -> Os serviços contratados pelos consumidores são dispersos entre todas as AZ para evitar que a falha de uma afete o serviço consumido
+    -> Funções das AZ:
+        -> Aumentar a disponibilidade de serviços
+        -> Ser um backup uma das outras
+    
+# Zona local (LZ)
+    -> Filho das AZs
+    -> Datacenters menores pra aproximar os serviços da AWS aos usuários finais, diminuindo a latência
+
+# Wavelength
+    -> Permite aos desenvolvedores criar apps com latência inferior a 10ms pra dispositivo móvel e usuário final
+    -> AWS coloca as próprias máquinas dentro das provedoras de telefonia pra melhorar a conexão (fast speed) com a AZ
+
+# Outposts
+    -> A AWS coloca seus próprios equipamentos de conexão rápida dentro de datacenters de terceiros (empresas ou etc)
+
+# Identity Access Management (IAM)
+    -> São filtros de segurança por onde é possível chegar via autenticação (Console, CLI ou API) e concentra a execução das ações da conta, como criar e gerenciar users, groups, roles, apps e etc e a partir disso criar e as políticas (IBP ou RBP)
+        -> IBP: Identity Based Policy
+        -> RBP: Resource Based Polcy
+        -> Com essas políticas é possível ter acesso aos serviços (criar maquina virtual, uma bucket, um EC2 e etc)
+    -> Evita que os usuários tenham acesso direto aos serviços
+    -. Todas as interações dos serviços da AWS são APIs
