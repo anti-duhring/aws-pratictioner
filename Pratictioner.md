@@ -182,4 +182,17 @@
         -> RBP: Resource Based Polcy
         -> Com essas políticas é possível ter acesso aos serviços (criar maquina virtual, uma bucket, um EC2 e etc)
     -> Evita que os usuários tenham acesso direto aos serviços
-    -. Todas as interações dos serviços da AWS são APIs
+    -> Todas as interações dos serviços da AWS são APIs
+## Usuários
+    -> É uma das coisas possíveis de se criar no IAM
+    -> O usuário pode acessar a plataforma via Console, CLI ou API
+    -> É preciso configurar suas permissões (0 priviéglios por padrão)
+## Grupos
+    -> Organiza os usuários
+    -> Ex: Agrupar usuários com o mesmo privilégio
+## Roles
+    -> São aplicadas a serviços da AWS
+    -> Ex: Uma instância EC2, ou uma VM, possa criar uma bucket
+## Policy
+    -> Regras para permitir ou bloquear acessos de grupos ou usuários
+    -> Ex: Grupo A só pode fazer uploads na Bucket X
