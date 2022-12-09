@@ -176,13 +176,16 @@
 # Outposts
     -> A AWS coloca seus próprios equipamentos de conexão rápida dentro de datacenters de terceiros (empresas ou etc)
 
-# Identity Access Management (IAM)
+# Identity and Access Management (IAM)
     -> São filtros de segurança por onde é possível chegar via autenticação (Console, CLI ou API) e concentra a execução das ações da conta, como criar e gerenciar users, groups, roles, apps e etc e a partir disso criar e as políticas (IBP ou RBP)
         -> IBP: Identity Based Policy
         -> RBP: Resource Based Polcy
         -> Com essas políticas é possível ter acesso aos serviços (criar maquina virtual, uma bucket, um EC2 e etc)
     -> Evita que os usuários tenham acesso direto aos serviços
     -> Todas as interações dos serviços da AWS são APIs
+    -> Formas de acesso:
+        -> Console: O usuário precisa fornecer o usuário, senha e a MFA(Multi Factor Authentication - opcional)
+        -> CLI e API: Com a access key e secret key
 ## Usuários
     -> É uma das coisas possíveis de se criar no IAM
     -> O usuário pode acessar a plataforma via Console, CLI ou API
@@ -196,3 +199,22 @@
 ## Policy
     -> Regras para permitir ou bloquear acessos de grupos ou usuários
     -> Ex: Grupo A só pode fazer uploads na Bucket X
+## MFA (Multi Factor Authentication)
+    -> Uma forma de autenticação em 2 fatores
+
+# EC2 (Elastic Compute Cloud)
+    -> EC2 (Elastic Compute Cloud) é a virtualização da AWS
+## Virtualização 
+    -> Máquina virtual -> Instância (pedaço de uma virtualização)
+    -> É a camada que vai por cima do hardware que comporta vários SOs
+    -> É possível alocar repartições da memória, CPU e etc pra cada SO7
+    -> AWS usa a Xen Virtualization
+## Vantagens
+    -> Controle completo da instância
+        -> Ex: Configurações, alocação de memória e etc
+    -> Security:
+        -> A máquina virtual só pode ser acessada pela key cadastrada
+        -> Há um firewall configurado por default que pode ser modificado
+    -> Integrado com os outros serviços da AWS
+    -> Low cost
+    -> Uncomplicated
